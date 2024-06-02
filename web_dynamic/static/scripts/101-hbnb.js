@@ -15,7 +15,7 @@ $(document).ready(() => {
     function fetchReviews() {
         const placeId = $('#placeId').val();
 	$.ajax({
-	    url: `http://0.0.0.0:5001/api/v1/places/${placeId}/reviews`,
+	    url: `http://localhost:5001/api/v1/places/${placeId}/reviews`,
 	    type: 'GET',
 	    contentType: 'application/json',
 	    success: (reviews) => {
